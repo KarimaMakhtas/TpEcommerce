@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+  <property name="hibernate.connection.url">jdbc:oracle:thin:@127.0.0.1:1521:tporacle</property>
+  <property name="hibernate.connection.username">tporacle</property>
+  <property name="hibernate.connection.password">tporacle</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+  <property name="hibernate.default_schema">tporacle</property>
+  <property name="show_sql">true</property>
+  <mapping class="com.epsi.TPOracle.entities.User"></mapping>
+  <mapping class="com.epsi.TPOracle.entities.Produit"></mapping>
+  <mapping class="com.epsi.TPOracle.entities.Categorie"></mapping>
+  <mapping class="com.epsi.TPOracle.entities.Panier"></mapping>
+  <mapping class="com.epsi.TPOracle.entities.Commande"></mapping>
+  <mapping class="com.epsi.TPOracle.entities.CommandeId"></mapping>
+</session-factory>
+</hibernate-configuration>
